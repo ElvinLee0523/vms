@@ -1,10 +1,10 @@
 GET http://localhost:3000/login 
 Content-Type: application/json
 
-#{
+# {
 #    "user_id": "S2203",
 #    "password": "stellar"
-#}
+# }
 
 # {
 #    "user_id": "R2769",
@@ -19,19 +19,18 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/finduser
 Content-Type: application/json 
-Authorization: Bearer 
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAzNTgzOTI0LCJleHAiOjE3MDM1ODc1MjR9.heqA-IoqDw3aktK4sLRUn7s-XFu6Sm3PKW9rxBbTe9Y
 {
-    "user_id": "R2769"
+    "user_id": "R276"
 }
 
 ###
 POST http://localhost:3000/registeruser
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhiMDEzNWE1ZjI3NGQ4MjE0OWE5NjUiLCJ1c2VyX2lkIjoiUzIyMDMiLCJwYXNzd29yZCI6IiQyYiQxMCR5NmNkU3FIT3FsOVg4U0xIdVNSNkJPRy9EZVhOUE5qOFpORGdnVHdqLjZWNTNnMkVLckxrNiIsIm5hbWUiOiJzdWlzZWkiLCJ1bml0Ijoic2VjdXJpdHkiLCJocF9udW0iOiI0MzE2NSIsInJvbGUiOiJzZWN1cml0eSIsImlhdCI6MTcwMzU4MjgzOCwiZXhwIjoxNzAzNTg2NDM4fQ.K00bMk1U6RLiLLlGvKAKMqnfGBttkry184MtZCrGyAI
 
 {
-    "user_id": "R5552",
+    "user_id": "R555211111",
     "password": "NoPeeking",
     "name": "NotAResident",
     "unit": "T-420-10",
@@ -42,7 +41,7 @@ Authorization: Bearer
 ###
 PATCH http://localhost:3000/updateUser
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer
 
 {
     "user_id": "R5552",
@@ -55,16 +54,17 @@ Authorization: Bearer
 ###
 DELETE http://localhost:3000/deleteUser
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAzNTg3NjkzLCJleHAiOjE3MDM1OTEyOTN9.Vr_hn6TCtQKmX0LRVmQvMItEA86v4JXG4j57nJtyUfI
 
 {
-    "user_id": "R5552"
+    "user_id": "R2769"
 }
 
 ###
 POST http://localhost:3000/registervisitor
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAzNTg3OTA2LCJleHAiOjE3MDM1OTE1MDZ9.hdCmIiCuEZcrbgFFVejbDE6GevXoIOD1VOQbPd_SblQ
+
 {
     "ref" : "647112110",
     "name": "zenitsu",
