@@ -54,7 +54,7 @@ app.listen(port, () => {
  */
 
 //login GET request
-app.get('/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     let data = req.body
     let result = await login(data);
     const loginuser = result.verify
