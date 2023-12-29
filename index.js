@@ -54,6 +54,10 @@ app.listen(port, () => {
  */
 
 //login GET request
+app.get('/', async (req, res) => {
+   res.send("hello world")
+})
+
 app.post('/login', async (req, res) => {
     let data = req.body
     let result = await login(data);
