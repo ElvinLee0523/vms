@@ -28,6 +28,22 @@ const user = client.db("Visitor_Management_v1").collection("users")
 const visitor = client.db("Visitor_Management_v1").collection("visitors")
 const visitorLog = client.db("Visitor_Management_v1").collection("visitor_log")
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerJsdoc = require('swagger-jsdoc');
+const options = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'MyVMS API',
+            version: "1.0.0",
+        },
+    },
+    apis: ['swagger.js'],
+};
+
+const swaggerSpec = swaggerJsdoc (options);
+app.use ('/api-docs', swaggerUi.serve, swaggerUi.setup (swaggerSpec));
+
 //decode of requests
 app.use(express.json());
 // connection to database
@@ -54,9 +70,9 @@ app.listen(port, () => {
  */
 
 //login GET request
-app.get('/', async (req, res) => {
-   res.send("hello world")
-})
+// app.get('/', async (req, res) => {
+//    res.send("hello world")
+// })
 
 app.post('/login', async (req, res) => {
     let data = req.body
